@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 0px 24px;
+}
+
+.navbar__menu li {
+  list-style: none;
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+  background-color: teal;
+  border-radius: 12px;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  font-size: 24px;
+}
+
+.navbar__logo {
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.navbar__icons {
+  font-size: 24px;
+  padding-left: 0px;
+  display: flex;
+}
+
+.navbar__icons li {
+  list-style: none;
+  padding: 8px 8px;
+}
+
+.navbar__hamburger {
+  position: absolute;
+  right: 32px;
+  padding: 8px 24px;
+  font-size: 24px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__hamburger {
+    display: block;
+  }
+}
